@@ -149,11 +149,14 @@
 
   .card{
     position:relative;
-    display:block;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:190px;
     background:var(--card);
     border:1px solid var(--border);
     border-radius:20px;
-    padding:30px 26px 26px;
+    padding:30px 26px;
     text-decoration:none;
     color:inherit;
     overflow:hidden;
@@ -178,15 +181,16 @@
   .card:hover .go-arrow{transform:translateX(4px);}
 
   .logo-tile{
-    height:56px;
+    height:110px;
     display:flex;
     align-items:center;
-    margin-bottom:22px;
+    justify-content:center;
     transition:transform .35s cubic-bezier(.2,.8,.2,1);
   }
   .logo-tile img{
     height:100%;
     width:auto;
+    max-width:100%;
     display:block;
   }
   .card:hover .logo-tile{transform:scale(1.06);}
@@ -281,31 +285,19 @@
     <div class="grid">
 
       <a class="card vcn" href="https://vemo-fp-a.github.io/VCN_BoardD/" target="_self">
-        <p class="desc">Charging Network</p>
         <div class="logo-tile"><img src="logos/vcn.png" alt="VCN — VEMO Charging"></div>
-        <p class="tag">Charging network · Active connectors, throughput, and financials for the VEMO network.</p>
-        <div class="go">View dashboard <span class="go-arrow">→</span></div>
       </a>
 
       <a class="card lto" href="https://vemo-fp-a.github.io/LTO_BoardD/" target="_self">
-        <p class="desc">Lease-to-Own Financing</p>
         <div class="logo-tile"><img src="logos/lto.png" alt="LTO — VEMO Impulso"></div>
-        <p class="tag">VEMO Impulso · Vehicle financing, portfolio, and monthly performance.</p>
-        <div class="go">View dashboard <span class="go-arrow">→</span></div>
       </a>
 
       <a class="card dae" href="https://vemo-fp-a.github.io/DAE_BoardD/" target="_self">
-        <p class="desc">Driving As Employee</p>
         <div class="logo-tile"><img src="logos/dae.png" alt="DAE — VEMO Conduce"></div>
-        <p class="tag">Ride-hailing · Fleet, active drivers, and financials for daily operations.</p>
-        <div class="go">View dashboard <span class="go-arrow">→</span></div>
       </a>
 
       <a class="card ev" href="https://vemo-fp-a.github.io/EV_BoardD/" target="_self">
-        <p class="desc">EV-Fleets</p>
         <div class="logo-tile"><img src="logos/ev.png" alt="EV — FLEETS"></div>
-        <p class="tag">Electric vehicle fleet · Fleet performance, utilization, and financials.</p>
-        <div class="go">View dashboard <span class="go-arrow">→</span></div>
       </a>
       
     </div>
